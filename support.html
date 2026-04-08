@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strive - Support</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <h1>Strive Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="methods.html">Method</a></li>
+                    <li><a href="log.html">Log</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" class="dashboard-container">
+
+            <div class="left-col">
+
+                <section class="card">
+                    <h2>Quick Links</h2>
+                    <p>Jump to a section of the dashboard:</p>
+                    <div class="sub-task">
+                        <label><a href="index.html">→ Dashboard home</a></label>
+                    </div>
+                    <div class="sub-task">
+                        <label><a href="methods.html">→ Study methods guide</a></label>
+                    </div>
+                    <div class="sub-task">
+                        <label><a href="log.html">→ Session log &amp; stats</a></label>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Before You Write In</h2>
+                    <p>Check the FAQ on the right — most common questions are already answered there. If your issue isn't covered, the form is the fastest way to reach us.</p>
+                </section>
+
+                <section class="card stats-card">
+                    <h2>Response Times</h2>
+                    <p>Bug reports: within 24 hours</p>
+                    <p>Feature requests: within 48 hours</p>
+                    <p>General feedback: within 3 days</p>
+                </section>
+
+            </div>
+
+            <div class="center-col">
+
+                <section class="card form-container">
+                    <h2>Support &amp; Feedback</h2>
+                    <p>Have a suggestion for Strive? Let us know below.</p>
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+
+                            <div class="form-group">
+                                <label for="full-name">Full Name:</label>
+                                <input type="text" id="full-name" name="name" required placeholder="e.g. Alex Smith">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required placeholder="alex@example.com">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Your Message</legend>
+
+                            <div class="form-group">
+                                <label for="subject">Issue Type:</label>
+                                <select id="subject" name="subject">
+                                    <option value="bug">Report a Bug</option>
+                                    <option value="feature">Feature Request</option>
+                                    <option value="other">General Feedback</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Details:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                        </fieldset>
+
+                        <button type="submit" class="submit-btn">Send Feedback</button>
+                    </form>
+                </section>
+
+            </div>
+
+            <div class="right-col">
+
+                <section class="card">
+                    <h2>Frequently Asked Questions</h2>
+
+                    <p><strong>Is my data saved between sessions?</strong></p>
+                    <p>Not currently. Strive is a static dashboard — task checkboxes and timer state reset when you close the page. This is a planned feature.</p>
+
+                    <p><strong>Can I add my own tasks?</strong></p>
+                    <p>Not yet. Tasks are currently hardcoded into the dashboard. We plan to add editable tasks in a future update — submit a feature request if this is important to you.</p>
+
+                    <p><strong>The timer doesn't count down. Is that a bug?</strong></p>
+                    <p>The timer is a visual placeholder for now. Interactive timer functionality is on the roadmap. Use the Pomodoro method manually in the meantime.</p>
+
+                    <p><strong>How do I log a study session?</strong></p>
+                    <p>Head to the <a href="log.html">Log page</a> to view your session history and weekly reflection. Manual logging is coming in a future release.</p>
+                </section>
+
+                <section class="card">
+                    <h2>Known Issues</h2>
+                    <span class="method-badge">Last updated Apr 8</span>
+                    <div class="sub-task">
+                        <label>Timer buttons are not functional yet</label>
+                    </div>
+                    <div class="sub-task">
+                        <label>Checkboxes do not persist on page reload</label>
+                    </div>
+                    <div class="sub-task">
+                        <label>No mobile navigation menu on small screens</label>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Strive Dashboard. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

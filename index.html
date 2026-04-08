@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strive Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <header>
+            <h1>Strive Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="methods.html">Method</a></li>
+                    <li><a href="log.html">Log</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" class="dashboard-container">
+
+            <div class="left-col">
+
+                <section class="card timer-card">
+                    <h2>Current Sprint</h2>
+                    <div class="timer-display">00:00:00</div>
+                    <div class="progress-container">
+                        <div class="progress-fill" style="width: 45%;"></div>
+                    </div>
+                    <div class="controls">
+                        <button>Start</button>
+                        <button>Pause</button>
+                        <button>Complete</button>
+                    </div>
+                </section>
+
+                <section class="card tasks-card">
+                    <h2>Sub-Tasks</h2>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sub1">
+                        <label for="sub1">Read Chapter 1</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sub2">
+                        <label for="sub2">Outline Essay</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sub3">
+                        <label for="sub3">Review class notes</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sub4">
+                        <label for="sub4">Check assignment brief</label>
+                    </div>
+                </section>
+
+                <section class="card goal-card">
+                    <h2>Daily Intent</h2>
+                    <p>"Deep work over busy work."</p>
+                </section>
+
+                <section class="card">
+                    <h2>Study Tips</h2>
+                    <p>Small habits that make a big difference:</p>
+                    <div class="sub-task">
+                        <input type="checkbox" id="tip1">
+                        <label for="tip1">Phone on silent before starting</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="tip2">
+                        <label for="tip2">Glass of water on the desk</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="tip3">
+                        <label for="tip3">Write down your goal before each session</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="tip4">
+                        <label for="tip4">Stand up and stretch every hour</label>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="center-col">
+
+                <section class="card todo-card">
+                    <h2>To-do</h2>
+                    <div class="task-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">History Project (Due tomorrow)</label>
+                        <span class="priority-high">High Priority</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Math Homework (Due in 3 days)</label>
+                        <span class="priority-medium">Medium Priority</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Science Reading (Due in 5 days)</label>
+                        <span class="priority-low">Low Priority</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task4">
+                        <label for="task4">English Essay (Due in 14 days)</label>
+                        <span class="priority-low">Low Priority</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task5">
+                        <label for="task5">Biology Lab Report (Due in 7 days)</label>
+                        <span class="priority-medium">Medium Priority</span>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Today's Schedule</h2>
+                    <p>Planned sessions for Tuesday, April 8:</p>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sch1">
+                        <label for="sch1">09:00 — History Project (Pomodoro, 1h)</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sch2">
+                        <label for="sch2">11:00 — Math Homework (Active Recall, 45m)</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sch3">
+                        <label for="sch3">14:00 — Science Reading (Feynman, 1h)</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="sch4">
+                        <label for="sch4">16:00 — English Essay (Mind Mapping, 30m)</label>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Quick Notes</h2>
+                    <p>Things to remember this week:</p>
+                    <div class="sub-task">
+                        <input type="checkbox" id="note1">
+                        <label for="note1">History exam is on Friday — prioritise notes</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="note2">
+                        <label for="note2">Science lab partner is Alex — coordinate report</label>
+                    </div>
+                    <div class="sub-task">
+                        <input type="checkbox" id="note3">
+                        <label for="note3">Library book due back Thursday</label>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="right-col">
+
+                <div class="card stats-card">
+                    <h2>Stats</h2>
+                    <p>Today's Focus: 3 hours</p>
+                    <p>Completed Tasks: 5</p>
+                    <p>Sessions Today: 3</p>
+                    <p>Streak: 5 days</p>
+                </div>
+
+                <div class="card streak-card">
+                    <h2>Weekly Consistency</h2>
+                    <div class="streak-row">
+                        <span class="day active" title="Mon">M</span>
+                        <span class="day active" title="Tue">T</span>
+                        <span class="day active" title="Wed">W</span>
+                        <span class="day active" title="Thu">T</span>
+                        <span class="day active" title="Fri">F</span>
+                        <span class="day" title="Sat">S</span>
+                        <span class="day" title="Sun">S</span>
+                    </div>
+                </div>
+
+                <section class="card stats-card">
+                    <h2>This Week's Focus</h2>
+                    <p>History: 3h 00m</p>
+                    <p>Math: 1h 45m</p>
+                    <p>Science: 2h 00m</p>
+                    <p>English: 30m</p>
+                    <p>Biology: 1h 00m</p>
+                </section>
+
+                <section class="card">
+                    <h2>Method of the Day</h2>
+                    <span class="method-badge">Recommended</span>
+                    <p>You have Science Reading today. Try the <strong>Feynman Technique</strong> — explain cellular respiration out loud in simple terms after reading. Notice where you get stuck; those are your gaps.</p>
+                    <p><a href="methods.html">See all methods →</a></p>
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Strive Dashboard. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
