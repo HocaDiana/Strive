@@ -1,0 +1,438 @@
+/* Desktop - 1 */
+
+position: relative;
+width: 1081px;
+height: 964px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 560px;
+left: 91px;
+top: 172px;
+
+/* Accent */
+background: #2C3E50;
+border: 1px solid rgba(206, 230, 240, 0.84);
+box-shadow: 0px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 100px 0px 0px 100px;
+
+
+/* Rectangle 3 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 450px;
+height: 560px;
+left: 541px;
+top: 172px;
+
+/* Surface */
+background: #EBEFFA;
+border: 1px solid rgba(206, 230, 240, 0.84);
+box-shadow: 5px 4px 4px 3px rgba(0, 0, 0, 0.25);
+border-radius: 0px 100px 100px 0px;
+
+
+/* Pswd */
+
+position: absolute;
+width: 332px;
+height: 65px;
+left: 600px;
+top: 439px;
+
+
+
+/* Rectangle 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 6.63%;
+right: 0%;
+top: 33.85%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 10px;
+
+
+/* Password */
+
+position: absolute;
+left: 6.63%;
+right: 70.78%;
+top: -4.62%;
+bottom: 70.77%;
+
+/* body */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Strive */
+
+position: absolute;
+width: 185px;
+height: 59px;
+left: calc(50% - 185px/2 - 224px);
+top: 259px;
+
+/* Heading */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
+
+
+
+/* Your number one study buddy! */
+
+position: absolute;
+width: 183px;
+height: 34px;
+left: 224px;
+top: 325px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+opacity: 0.7;
+
+
+/* Sign in */
+
+position: absolute;
+width: 196px;
+height: 56px;
+left: 668px;
+top: 262px;
+
+/* Heading */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.01em;
+
+color: #000000;
+
+
+
+/* Email */
+
+position: absolute;
+width: 332px;
+height: 65px;
+left: 600px;
+top: 350px;
+
+
+
+/* Rectangle 4 */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 6.63%;
+right: 0%;
+top: 33.85%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 10px;
+
+
+/* Email */
+
+position: absolute;
+width: 47px;
+height: 22px;
+left: 22px;
+top: -3px;
+
+/* body */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Button */
+
+position: absolute;
+width: 200px;
+height: 44px;
+left: 677px;
+top: 596px;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Primary */
+background: #4E5579;
+border-radius: 8px;
+
+
+/* Sign in */
+
+position: absolute;
+left: 29.5%;
+right: 29.5%;
+top: 29.55%;
+bottom: 29.55%;
+
+/* body */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Checkbox Field */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 239px;
+height: 22px;
+left: 622px;
+top: 520px;
+
+
+
+/* Checkbox and Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 169px;
+min-width: 120px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Checkbox */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 16px;
+height: 16px;
+
+background: #2C2C2C;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Check */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Icon */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 25%;
+bottom: 29.17%;
+
+border: 1.6px solid #F5F5F5;
+
+
+/* Label */
+
+width: 141px;
+height: 22px;
+
+/* Body Base */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #1E1E1E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Description Row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+display: none;
+width: 120px;
+min-width: 120px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Button */
+
+position: absolute;
+width: 200px;
+height: 44px;
+left: 217px;
+top: 596px;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #8E96BA;
+border-radius: 8px;
+
+
+/* Sign up */
+
+position: absolute;
+left: 20.5%;
+right: 21%;
+top: 29.55%;
+bottom: 29.55%;
+
+/* body */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* A platform that makes studying easier than ever before while keeping track of you tasks for you. */
+
+position: absolute;
+width: 292px;
+height: 104px;
+left: 170px;
+top: 411px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+opacity: 0.7;
