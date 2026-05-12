@@ -1,17 +1,30 @@
-## Chosen Scenario
-**Study Sprint Planner:** A web-based dashboard designed to help students track their focus sessions, manage sub-tasks, explore study methods, and log their productivity using a structured, interval-based approach.
+# Strive Dashboard - Homework 2
 
-## Implemented Requirements Checklist
-- [x] **Minimum 4 Pages:** Includes `index.html` (Dashboard), `methods.html` (Methods Guide), `log.html` (Session Log), and `support.html` (Support/FAQ).
-- [x] **Semantic HTML:** All pages use a valid HTML5 shell and proper structural landmarks (`<header>`, `<nav>`, `<main id="main-content">`, `<footer>`).
-- [x] **Accessibility:** Included a visually hidden "Skip to main content" link that appears on keyboard focus.
-- [x] **Accessible Forms:** The Support page features a form grouped with `<fieldset>` and `<legend>`, and uses explicit `<label>` tags tied to input IDs.
-- [x] **Tabular Data:** The Log page uses a real HTML `<table>` with a `<caption>` and proper `<th scope="col">` headers.
-- [x] **Modern CSS Layout:** Created a cohesive design using a single external stylesheet (`styles.css`), utilizing CSS Grid for the layout instead of HTML tables.
-- [x] **Working Navigation:** Bi-directional navigation links are consistent and functional across all pages.
-- [x] **Validation:** HTML and CSS code checked for errors.
+This project is an extension of the Strive Dashboard (HW1).
+
+## Project Scenario
+Strive is a personal productivity dashboard designed for students to track study sessions and implement scientifically-backed study methods.
+
+## New Features (HW2)
+- **CSS Specificity Exercise**: Added `specificity.html` and `specificity.txt` to demonstrate understanding of CSS selector weight.
+- **Business Card Page**: A dedicated `card.html` page using element, class, and ID selectors.
+- **Responsive Overview**: An `overview.html` page using **CSS Grid** for the main layout and **Flexbox** for components, including media queries for mobile responsiveness.
+- **Figma Integration**: Implemented a login/authentication UI based on Figma designs, with styles exported to `strive_auth.css`.
+- **Chatbot Interactivity**: A functional "Study Methods Quiz" in `chatbot.html` using vanilla JavaScript for DOM manipulation and event handling.
+
+## Technical Implementation
+- **CSS Placement**: Demonstrates External (main CSS), Internal (`methods.html` style block), and Inline (timer progress bar) styling.
+- **Layouts**: Used CSS Grid for the dashboard and overview structures; Flexbox for navigation and cards.
+- **Validation**: All HTML and CSS files have been updated to satisfy HW1 and HW2 requirements.
+
+## File Checklist
+- `index.html`, `methods.html`, `log.html`, `support.html` (Core Pages)
+- `specificity.html` & `specificity.txt` (Lab Exercise)
+- `card.html` & `card.css` (Business Card)
+- `overview.html` & `overview.css` (Responsive Profile)
+- `chatbot.html`, `chatbot.css`, `chatbot.js` (JS Interactivity)
+- `strive_auth.css` (Figma Exported Styles)
 
 ## Known Limitations
-* **Static Interactivity:** Since JavaScript is outside the scope of this assignment, the Timer buttons (Start/Pause/Complete) are visual placeholders and do not count down.
-* **State Persistence:** Checkbox states and form submissions do not save or persist upon page reload.
-* **Responsiveness:** The CSS Grid layout is primarily optimized for desktop viewing. A dedicated mobile toggle menu for small screens has not been implemented yet.
+- The timer on the main dashboard remains a visual placeholder.
+- Checkbox states on the Log page do not persist after a page refresh.

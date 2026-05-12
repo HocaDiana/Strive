@@ -1,0 +1,138 @@
+body {
+    overflow-x: hidden;
+    background: linear-gradient(150deg, #b6dbfa 0%, #e5ecf7 100%);
+    background-attachment: fixed;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.skip-link {
+    position: absolute;
+    border-radius: 10px;
+    top: -100px;
+    left: 0;
+    background: #b5bff373;
+    color: rgb(33, 23, 66);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    background-color: #ebeffa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    color: #2c3e50;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4e5579;
+}
+
+nav ul li a {
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.card a {
+    display: block;
+    color: steelblue;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 50px;
+    text-align: center;
+    width: 320px;
+    margin: 90px auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 3px solid steelblue;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 0.95rem;
+    margin: 4px 0;
+}
+
+#name {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin: 0 0 8px 0;
+}
+
+#links {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}

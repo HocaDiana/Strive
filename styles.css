@@ -13,9 +13,11 @@
 }
 
 body {
+    overflow-x: hidden;
     background: linear-gradient(150deg, #b6dbfa 0%, #e5ecf7 100%);
     background-attachment: fixed;
     margin: 0;
+    line-height: 1.6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -38,8 +40,6 @@ body {
 header {
     position: relative;
     z-index: 10;
-    width: 100%;
-    width: 100%;
     border-radius: 0px 0px 20px 20px;
     text-align: center;
     background-color: #ebeffa;
@@ -191,6 +191,13 @@ main {
     flex-direction: column;
     gap: 20px;
     grid-column: 1;
+}
+
+
+.single-col-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .sub-task {
@@ -549,6 +556,13 @@ input:focus, textarea:focus {
 .span-full {
     grid-column: 1 / span 3;
 }
+
+caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4e5579;
+    margin-bottom: 10px;
+}
  
 .log-stats-row {
     grid-column: 1 / span 3;
@@ -578,6 +592,14 @@ input:focus, textarea:focus {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     color: #2c3e50;
 }
+
+.log-table tbody tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.log-table tbody tr:nth-child(odd) td {
+    background: rgba(255, 255, 255, 0.2);
+}
  
 .log-table tbody tr:last-child td {
     border-bottom: none;
@@ -586,6 +608,14 @@ input:focus, textarea:focus {
 .log-table tbody tr:hover td {
     background: rgba(255, 255, 255, 0.5);
     transition: background 0.2s ease;
+}
+
+.log-table tfoot td {
+    padding: 10px 14px;
+    background: rgba(78, 85, 121, 0.1);
+    color: #4e5579;
+    font-weight: bold;
+    border-top: 2px solid rgba(78, 85, 121, 0.2);
 }
  
 .status-done {
