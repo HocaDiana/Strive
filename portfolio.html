@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strive - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Strive Dashboard</h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="methods.html">Method</a></li>
+                <li><a href="log.html">Log</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="card.html">Profile Card</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="portfolio-page">
+
+        <section class="portfolio-hero" aria-label="Portfolio introduction">
+            <div class="hero-text">
+                <p class="hero-label">Student Portfolio</p>
+                <h2>My Projects</h2>
+                <p class="hero-sub">A collection of work built during Year 1 at West University of Timișoara.</p>
+            </div>
+            <div class="hero-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+                <span></span><span></span><span></span>
+            </div>
+        </section>
+
+        <section class="card form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading">Add a Project</h2>
+            <p id="form-desc">Fill in all required fields (*) and press <strong>Add Project</strong> to display it in the table below.</p>
+
+            <form id="project-form" novalidate aria-describedby="form-desc">
+
+                <fieldset>
+                    <legend>Project Details</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="proj-name">Project Name (*)</label>
+                            <input
+                                type="text"
+                                id="proj-name"
+                                name="proj-name"
+                                required
+                                placeholder="e.g. Strive Dashboard"
+                                aria-describedby="err-name"
+                                autocomplete="off">
+                            <span class="field-error" id="err-name" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proj-date">Completion Date (*)</label>
+                            <input
+                                type="date"
+                                id="proj-date"
+                                name="proj-date"
+                                required
+                                aria-describedby="err-date">
+                            <span class="field-error" id="err-date" role="alert" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="proj-desc">Description (*)</label>
+                        <textarea
+                            id="proj-desc"
+                            name="proj-desc"
+                            rows="3"
+                            required
+                            maxlength="300"
+                            placeholder="Short description of what the project does and what you learned."
+                            aria-describedby="err-desc desc-count"></textarea>
+                        <span class="char-count" id="desc-count" aria-live="polite">0 / 300 characters</span>
+                        <span class="field-error" id="err-desc" role="alert" aria-live="polite"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="proj-url">Project URL (*)</label>
+                            <input
+                                type="url"
+                                id="proj-url"
+                                name="proj-url"
+                                required
+                                placeholder="https://github.com/you/project"
+                                aria-describedby="err-url">
+                            <span class="field-error" id="err-url" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proj-img">Thumbnail URL</label>
+                            <input
+                                type="url"
+                                id="proj-img"
+                                name="proj-img"
+                                placeholder="https://placehold.co/80x60"
+                                aria-describedby="err-img hint-img">
+                            <span class="field-hint" id="hint-img">Leave blank to use a default placeholder.</span>
+                            <span class="field-error" id="err-img" role="alert" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Technologies &amp; Category</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="proj-tech">Technologies Used (*)</label>
+                            <input
+                                type="text"
+                                id="proj-tech"
+                                name="proj-tech"
+                                required
+                                placeholder="e.g. HTML, CSS, JavaScript"
+                                aria-describedby="err-tech">
+                            <span class="field-error" id="err-tech" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="proj-category">Category (*)</label>
+                            <select id="proj-category" name="proj-category" required aria-describedby="err-category">
+                                <option value="">— Select a category —</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Mobile App">Mobile App</option>
+                                <option value="Algorithm / Theory">Algorithm / Theory</option>
+                                <option value="Design / UI">Design / UI</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="field-error" id="err-category" role="alert" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Add Project</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="card table-section" aria-labelledby="table-heading">
+            <h2 id="table-heading">Submitted Projects</h2>
+
+            <div id="empty-state" class="empty-state" aria-live="polite">
+                <p>No projects added yet. Fill in the form above to get started.</p>
+            </div>
+
+            <div class="table-wrapper" id="table-wrapper" hidden>
+                <table class="projects-table" id="projects-table">
+                    <caption>List of projects submitted through the form</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Thumbnail</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Technologies</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody id="projects-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Strive Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
